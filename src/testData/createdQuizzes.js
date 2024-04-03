@@ -1,6 +1,6 @@
 const {randomUUID} = require("crypto");
 
-const data = [
+const createdQuizzes = [
 	{
 		quizId: randomUUID(),
 		userId: randomUUID(),
@@ -45,4 +45,7 @@ const data = [
 				],
 			},
 		],
-	},
+	}
+];
+
+module.exports = {createdQuizzes};

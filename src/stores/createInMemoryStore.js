@@ -1,6 +1,7 @@
 const createdQuizzes = require("../testData/createdQuizzes");
 
 function createStore(){
+	console.log(createdQuizzes)
 	const createdQuizzesStorage = createdQuizzes;
 
 	store = {
