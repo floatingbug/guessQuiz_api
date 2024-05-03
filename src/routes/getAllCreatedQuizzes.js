@@ -5,18 +5,26 @@ function getAllCreatedQuizzes({store}){
 }
 
 async function requestHandler({req, res, store}){
-	const promise = store.getAllCreatedQuizzes();
+	console.log("request")
 
-	promise.then((result)=>{
-			res.status(200);
-			res.json({success: true, msg: "Sent all created quizzes.", data: result});
-		});
-
-	promise.catch((err)=>{
-		console.log(err.message);
+	let result = null;
+	const msg = "Fail to get all created quizzes. Plese try again later.";
+	try{
+		result = await store.getAllCreatedQuizzes();
+	}
+	catch(err){
+		console.log(err);
 		res.status(500);
-		return res.json({success: false, msg: "Fail to get quizzes. Please try again later."});
-	});
+		return res.json({success: false, msg});
+	}
+
+	if(!result){
+		res.status(500);
+		return res.json({success: false, msg});
+	}
+	
+	res.status(200);
+	res.json({success: true, msg: "Sent all created quizzes.", data: result});
 }
 
 

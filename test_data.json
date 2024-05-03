@@ -1,0 +1,44 @@
+{
+	"quizId": 1,
+	"creator": "tom",
+	"quiz": [
+		{
+			"question": "question 1",
+			"answers": [
+				"answer 1 question 1",
+				"answer 2 question 1",
+				"answer 3 question 1",
+				"answer 4 question 1"
+			]
+		},
+		{
+			"question": "question 2",
+			"answers": [
+				"answer 1 question 2",
+				"answer 2 question 2",
+				"answer 3 question 2",
+				"answer 4 question 2"
+			]
+		},
+		{
+			"question": "question 3",
+			"answers": [
+				"answer 1 question 3",
+				"answer 2 question 3",
+				"answer 3 question 3",
+				"answer 4 question 3"
+			]
+		},
+		{
+			"question": "question 4",
+			"answers": [
+				"answer 1 question 4",
+				"answer 2 question 4",
+				"answer 3 question 4",
+				"answer 4 question 4"
+			]
+		}
+
+	]
+}
+
